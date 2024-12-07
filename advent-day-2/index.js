@@ -1010,50 +1010,6 @@ for (const element of arr) {
 
 console.log(newArr);
 
-// const validateDiff = (a, b) => {
-//   let diff = Math.abs(a - b);
-//   const minNum = 1;
-//   const maxNum = 3;
-
-//   return minNum <= diff && diff <= maxNum;
-// };
-
-// const isValidReport = (report) => {
-//   let increase = null;
-
-//   for (let i = 0; i < report.length; i++) {
-//     let diff = validateDiff(report[i], report[i + 1]);
-//     if (!diff) {
-//       return false;
-//     }
-//     if (increase === null) {
-//       if (report[i] < report[i + 1]) {
-//         increase = true; // Увеличение
-//       } else if (report[i] > report[i + 1]) {
-//         increase = false; // Уменьшение
-//       }
-//     } else {
-//       // Проверка на соответствие направлению
-//       if (increase && report[i] > report[i + 1]) {
-//         return false; // Если должно быть увеличение, а теперь уменьшение
-//       }
-//       if (!increase && report[i] < report[i + 1]) {
-//         return false; // Если должно быть уменьшение, а теперь увеличение
-//       }
-//     }
-//   }
-//   return true;
-// };
-
-// let score = 0;
-// for (const element of newArr) {
-//   if (isValidReport(element)) {
-//     score += 1;
-//   }
-// }
-
-// console.log(score);
-
 const validateDiff = (a, b) => {
   let diff = Math.abs(a - b);
   const minNum = 1;
